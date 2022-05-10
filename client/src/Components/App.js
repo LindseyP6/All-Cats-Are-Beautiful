@@ -1,21 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
+import Header from './Header'
+import CatsContainer from './CatsContainer'
 
 function App() {
   const [catsArray, setCatsArray] = useState([])
 
 
-  useEffect(() => {
-    fetch("http://localhost:4000/cats")
-    .then(res => res.json())
+  useEffect(()=>{
+    fetch("/cats")
+    .then(r => r.json())
     .then(cats => setCatsArray(cats))
-  }, [] )
+  }, [])
 
 
   return (
     <div className="App">
       <Header />
-All Cats Are Beautiful
+      <CatsContainer cats={catsArray}/>
     </div>
   );
 }

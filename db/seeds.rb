@@ -14,8 +14,8 @@ Cat.create(
     tip: TRUE,
     adopted: FALSE,
     trap_date: "84th Street",
-    trap_location: "7/24/2020"
-    tnr: TRUE,
+    trap_location: "7/24/2020",
+    tnr: TRUE
     )
 Cat.create(
     name: "Luna", 

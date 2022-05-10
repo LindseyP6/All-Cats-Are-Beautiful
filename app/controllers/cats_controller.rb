@@ -1,7 +1,8 @@
 class CatsController < ApplicationController
 
     def index
-        render json: Cat.all
+        cats = Cat.all
+        render json: cats
     end
 
     def show
@@ -30,7 +31,7 @@ class CatsController < ApplicationController
     private
 
     def cat_params
-        params.permit(:name, :description :gender, :image, :age,  :spay_neuter, :tip, :adopted, :trap_date, :trap_location, :tnr )
+        params.permit(:name, :description, :gender, :image, :age,  :spay_neuter, :tip, :adopted, :trap_date, :trap_location, :tnr )
     end
 
 end
