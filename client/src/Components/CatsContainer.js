@@ -13,7 +13,9 @@ function CatsContainer({cats}) {
   />)
 
 return (
-  <div>{catCards}</div>
+  <div id="cats-container">
+    {catCards}
+  </div>
 )
 }
 
