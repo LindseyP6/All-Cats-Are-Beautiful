@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import '../App.css';
-import Header from './Header'
-import CatsContainer from './CatsContainer'
+import Header from './Header';
+import CatsContainer from './CatsContainer';
+import Instagram from './Instagram';
 
 function App() {
   const [catsArray, setCatsArray] = useState([])
@@ -17,7 +19,15 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <CatsContainer cats={catsArray}/>
+
+      <Switch>
+        <Route exact path="/cats">
+          <CatsContainer 
+            cats={catsArray} />
+        </Route>
+      </Switch>
+
+      {/* <Instagram /> */}
     </div>
   );
 }

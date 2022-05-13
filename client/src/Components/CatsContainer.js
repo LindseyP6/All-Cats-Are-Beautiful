@@ -2,6 +2,7 @@ import React from 'react';
 import CatCards from './CatCards'
 
 function CatsContainer({cats}) {
+  
   const catCards = cats.map((cat) => 
   <CatCards
     key={cat.id}

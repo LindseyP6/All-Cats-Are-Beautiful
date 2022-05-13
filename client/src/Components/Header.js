@@ -6,19 +6,21 @@ import { HiOutlineMail } from "react-icons/hi";
 function Header() {
   return (
     <div id="header">
-      <div className="header-h1-left">
+      <img src="../images/wink.png" alt="wink-logo-top-left" className="header-logo-wink"/>
+      <div className="header-title-and-links">
         <h1>All Cats Are Beautiful</h1>
+          <div className="header-navlinks-right">
+            <NavLink exact to="/">Home | </NavLink>
+            <NavLink exact to="/cats">Ours Cats | </NavLink>
+            <NavLink exact to="/resources">Resources | </NavLink>
+            <NavLink exact to="/contact">Contact </NavLink>
+        </div>     
       </div>
       <div className="header-contact-right">
-        <a href="mailto:allcatsarebeautifulbktnr@gmail.com" target="_blank" alt="Mail" rel="noreferrer"><HiOutlineMail /></a>
-        <a href="https://www.instagram.com/allcatsarebeautiful_bktnr/" target="_blank" rel="noreferrer"><AiOutlineInstagram /></a>
+        <a href="mailto:allcatsarebeautifulbktnr@gmail.com" target="_blank" alt="Mail" rel="noreferrer" className="header-contact-link"><HiOutlineMail /></a>
+        <a href="https://www.instagram.com/allcatsarebeautiful_bktnr/" target="_blank" rel="noreferrer" className="header-contact-link"><AiOutlineInstagram /></a>
       </div>
-      <div className="header-navlinks-right">
-        <NavLink exact to="/">Main Page | </NavLink>
-        <NavLink exact to="/cats">Ours Cats | </NavLink>
-        <NavLink exact to="/resources">Resources </NavLink>
-      </div>     
-      
+
     </div>
   )
 }
