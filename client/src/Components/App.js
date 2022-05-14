@@ -26,7 +26,7 @@ function App() {
             cats={catsArray} />
         </Route>
       </Switch>
-
+<img src="https://storage.cloud.google.com/all-cats-are-beautiful/Aida.jpeg" alt="cat"/>
       {/* <Instagram /> */}
     </div>
   );
