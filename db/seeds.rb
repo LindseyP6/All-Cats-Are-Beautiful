@@ -342,7 +342,7 @@ c23 = Cat.create(
     spay_neuter: TRUE,
     tip: TRUE,
     adopted: FALSE,
-    trap_date: "4/3/2021"
+    trap_date: "4/3/2021",
     trap_location: "84th Street",
     tnr: TRUE,
     fostered: FALSE,
@@ -357,7 +357,7 @@ c24 = Cat.create(
     spay_neuter: TRUE,
     tip: TRUE,
     adopted: FALSE,
-    trap_date: "4/14/2021"
+    trap_date: "4/14/2021",
     trap_location: "84th Street & 18th Avenue",
     tnr: TRUE,
     fostered: FALSE,
@@ -372,7 +372,7 @@ c25 = Cat.create(
     spay_neuter: FALSE,
     tip: FALSE,
     adopted: FALSE,
-    trap_date: "5/2/2021"
+    trap_date: "5/2/2021",
     trap_location: "84th Street & New Utretch Ave",
     tnr: FALSE,
     fostered: TRUE,
@@ -387,7 +387,7 @@ c26 = Cat.create(
     spay_neuter: FALSE,
     tip: FALSE,
     adopted: FALSE,
-    trap_date: "5/2/2021"
+    trap_date: "5/2/2021",
     trap_location: "84th Street & New Utretch Ave",
     tnr: FALSE,
     fostered: TRUE,
@@ -402,7 +402,7 @@ c27 = Cat.create(
     spay_neuter: FALSE,
     tip: FALSE,
     adopted: FALSE,
-    trap_date: "5/2/2021"
+    trap_date: "5/2/2021",
     trap_location: "84th Street & New Utretch Ave",
     tnr: FALSE,
     fostered: TRUE,
@@ -417,7 +417,7 @@ c28 = Cat.create(
     spay_neuter: TRUE,
     tip: FALSE,
     adopted: TRUE,
-    trap_date: "5/2/2021"
+    trap_date: "5/2/2021",
     trap_location: "84th Street & New Utretch Ave",
     tnr: FALSE,
     fostered: TRUE,
@@ -432,7 +432,7 @@ c29 = Cat.create(
     spay_neuter: TRUE,
     tip: FALSE,
     adopted: TRUE,
-    trap_date: "6/9/2021"
+    trap_date: "6/9/2021",
     trap_location: "84th Street; driveway",
     tnr: FALSE,
     fostered: TRUE,
@@ -447,7 +447,7 @@ c30 = Cat.create(
     spay_neuter: TRUE,
     tip: FALSE,
     adopted: TRUE,
-    trap_date: "6/9/2021"
+    trap_date: "6/9/2021",
     trap_location: "84th Street; driveway",
     tnr: FALSE,
     fostered: TRUE,
@@ -462,7 +462,7 @@ c31 = Cat.create(
     spay_neuter: TRUE,
     tip: FALSE,
     adopted: TRUE,
-    trap_date: "6/9/2021"
+    trap_date: "6/9/2021",
     trap_location: "84th Street; driveway",
     tnr: FALSE,
     fostered: TRUE,
@@ -477,7 +477,7 @@ c32 = Cat.create(
     spay_neuter: TRUE,
     tip: TRUE,
     adopted: FALSE,
-    trap_date: "7/11/2021"
+    trap_date: "7/11/2021",
     trap_location: "84th Street; home",
     tnr: TRUE,
     fostered: FALSE,
@@ -492,7 +492,7 @@ c33 = Cat.create(
     spay_neuter: TRUE,
     tip: TRUE,
     adopted: FALSE,
-    trap_date: "9/12/2021"
+    trap_date: "9/12/2021",
     trap_location: "84th Street; driveway",
     tnr: TRUE,
     fostered: FALSE,
@@ -507,7 +507,7 @@ c34 = Cat.create(
     spay_neuter: TRUE,
     tip: FALSE,
     adopted: TRUE,
-    trap_date: "9/12/2021"
+    trap_date: "9/12/2021",
     trap_location: "84th Street; driveway",
     tnr: FALSE,
     fostered: TRUE,
@@ -522,7 +522,7 @@ c35 = Cat.create(
     spay_neuter: TRUE,
     tip: FALSE,
     adopted: TRUE,
-    trap_date: "9/12/2021"
+    trap_date: "9/12/2021",
     trap_location: "84th Street; driveway",
     tnr: FALSE,
     fostered: TRUE,
@@ -537,7 +537,7 @@ c36 = Cat.create(
     spay_neuter: TRUE,
     tip: TRUE,
     adopted: FALSE,
-    trap_date: "11/13/2021"
+    trap_date: "11/13/2021",
     trap_location: "1537 85th Street",
     tnr: TRUE,
     fostered: FALSE,
@@ -552,7 +552,7 @@ c37 = Cat.create(
     spay_neuter: TRUE,
     tip: FALSE,
     adopted: FALSE,
-    trap_date: "11/13/2021"
+    trap_date: "11/13/2021",
     trap_location: "82nd Street School",
     tnr: FALSE,
     fostered: TRUE,
