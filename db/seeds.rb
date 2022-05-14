@@ -6,7 +6,7 @@ User.create(name: "Nicole", image: "", bio: "", password: "")
 
 c1 = Cat.create(
     name: "Aflie", 
-    description: "Grey/brown tabbie", 
+    description: "Grey/brown tabby. Slender. Nearly identical to Little Mama.", 
     gender: "female", 
     image: "",
     age: "young",
@@ -35,8 +35,8 @@ c2 = Cat.create(
     special_notes: ""
     )
 c3 = Cat.create(
-    name: "spooky", 
-    description: "All black", 
+    name: "Spooky", 
+    description: "All black, medium size with yellow-green eyes.", 
     gender: "male", 
     image: "",
     age: "adult",
@@ -50,79 +50,78 @@ c3 = Cat.create(
     special_notes: "Belongs to rude neighbor; protective and assertive. Took cares of kittens for a while"
     )
 c4 = Cat.create(
-    name: "Luna", 
-    description: "Black, some brown in the body, white on chest and groin; green-yellow eyes", 
-    gender: "female", 
+    name: "Kitten", 
+    description: "Tabby kitten", 
+    gender: "male", 
     image: "",
-    age: "young",
+    age: "kitten",
     spay_neuter: TRUE,
-    tip: TRUE,
-    adopted: FALSE,
-    trap_date: "7/24/2020"
-    trap_location: "84th Street",
-    tnr: TRUE,
+    tip: FALSE,
+    adopted: TRUE,
+    trap_date: "8/22/2020"
+    trap_location: "83rd Street",
+    tnr: FALSE,
     fostered: FALSE,
-    special_notes: ""
+    special_notes: "Sweet brother and sister pair"
     )
 c5 = Cat.create(
-    name: "Luna", 
-    description: "Black, some brown in the body, white on chest and groin; green-yellow eyes", 
+    name: "Kitten", 
+    description: "Black and white kitten", 
     gender: "female", 
     image: "",
-    age: "young",
+    age: "kitten",
     spay_neuter: TRUE,
-    tip: TRUE,
-    adopted: FALSE,
-    trap_date: "7/24/2020"
-    trap_location: "84th Street",
-    tnr: TRUE,
+    tip: FALSE,
+    adopted: TRUE,
+    trap_date: "8/22/2020"
+    trap_location: "83rd Street",
+    tnr: FALSE,
     fostered: FALSE,
-    special_notes: ""
+    special_notes: "Sweet brother and sister pair"
     )
 c6 = Cat.create(
-    name: "Luna", 
-    description: "Black, some brown in the body, white on chest and groin; green-yellow eyes", 
-    gender: "female", 
+    name: "Little Mama", 
+    description: "Grey/brown tabby. Slender. Nearly identical to Alfie.", 
     image: "",
-    age: "young",
-    spay_neuter: TRUE,
-    tip: TRUE,
+    age: "young/adult",
+    spay_neuter: FALSE,
+    tip: FALSE,
     adopted: FALSE,
-    trap_date: "7/24/2020"
+    trap_date: "10/4/2020"
     trap_location: "84th Street",
-    tnr: TRUE,
+    tnr: FALSE,
     fostered: FALSE,
-    special_notes: ""
+    special_notes: "Mother of kittens that were never found. Kittens born in July. Neighbors alerted us to a sick cat and we caught Little Mama by hand. She was brought to the vet and had to be put down due to numerous injuries and a broken leg. DECEASED"
     )
 c7 = Cat.create(
-    name: "Luna", 
-    description: "Black, some brown in the body, white on chest and groin; green-yellow eyes", 
-    gender: "female", 
+    name: "Marley", 
+    description: "Grey tabby with white legs", 
+    gender: "male", 
     image: "",
-    age: "young",
+    age: "kitten; weeks old",
     spay_neuter: TRUE,
-    tip: TRUE,
-    adopted: FALSE,
-    trap_date: "7/24/2020"
-    trap_location: "84th Street",
-    tnr: TRUE,
-    fostered: FALSE,
-    special_notes: ""
+    tip: FALSE,
+    adopted: TRUE,
+    trap_date: "10/6/2020"
+    trap_location: "84th Street, driveway",
+    tnr: FALSE,
+    fostered: TRUE,
+    special_notes: "Caught by hand! Picked up in front yard with owner's permission. Fostered for 3/4 days" 
     )
 c8 = Cat.create(
-    name: "Luna", 
-    description: "Black, some brown in the body, white on chest and groin; green-yellow eyes", 
+    name: "Ally", 
+    description: "All black, medium size with  yellow eyes", 
     gender: "female", 
     image: "",
-    age: "young",
+    age: "adult",
     spay_neuter: TRUE,
     tip: TRUE,
     adopted: FALSE,
-    trap_date: "7/24/2020"
-    trap_location: "84th Street",
+    trap_date: "10/9/2020"
+    trap_location: "84th Street's alley",
     tnr: TRUE,
     fostered: FALSE,
-    special_notes: ""
+    special_notes: "Pregnant; later term abortion with spay. Calm"
     )
 c9 = Cat.create(
     name: "Luna", 

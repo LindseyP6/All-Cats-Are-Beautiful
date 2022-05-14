@@ -9,10 +9,10 @@ function Header() {
       <img src="../images/wink.png" alt="wink-logo-top-left" className="header-logo-wink"/>
       <div className="header-title-and-links">
         <h1>All Cats Are Beautiful</h1>
-          <div className="header-navlinks-right">
-            <NavLink exact to="/">Home | </NavLink>
-            <NavLink exact to="/cats">Ours Cats | </NavLink>
-            <NavLink exact to="/resources">Resources | </NavLink>
+          <div className="header-navlinks">
+            <NavLink exact to="/">Home</NavLink>
+            <NavLink exact to="/cats">Cats</NavLink>
+            <NavLink exact to="/resources">Resources</NavLink>
             <NavLink exact to="/contact">Contact </NavLink>
         </div>     
       </div>
