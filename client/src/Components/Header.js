@@ -6,7 +6,7 @@ import { HiOutlineMail } from "react-icons/hi";
 function Header() {
   return (
     <div id="header">
-      <img src="../images/wink.png" alt="wink-logo-top-left" className="header-logo-wink"/>
+      <img src="https://storage.cloud.google.com/all-cats/WinkLogo.png" alt="wink-logo-top-left" className="header-logo-wink"/>
       <div className="header-title-and-links">
         <h1>All Cats Are Beautiful</h1>
           <div className="header-navlinks">

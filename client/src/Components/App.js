@@ -3,7 +3,8 @@ import { Route, Switch } from 'react-router-dom';
 import '../App.css';
 import Header from './Header';
 import CatsContainer from './CatsContainer';
-import Instagram from './Instagram';
+// import Instagram from './Instagram';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [catsArray, setCatsArray] = useState([])
@@ -22,11 +23,9 @@ function App() {
 
       <Switch>
         <Route exact path="/cats">
-          <CatsContainer 
-            cats={catsArray} />
+          <CatsContainer />
         </Route>
       </Switch>
-<img src="https://storage.cloud.google.com/all-cats-are-beautiful/Aida.jpeg" alt="cat"/>
       {/* <Instagram /> */}
     </div>
   );
