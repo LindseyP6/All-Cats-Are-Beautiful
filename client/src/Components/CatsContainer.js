@@ -17,18 +17,27 @@ function CatsContainer({cats}) {
     key={cat.id}
     id={cat.id}
     name={cat.name}
-    image={cat.image}
     description={cat.description}
     gender={cat.gender}
+    image={cat.image}
     age={cat.age}
+    spayNeuter={cat.spay_neuter}
+    tip={cat.tip}
+    adopted={cat.adopted}
     trapDate={cat.trap_date}
     trapLocation={cat.trap_location}
+    tnr={cat.tnr}
+    fostered={cat.fostered}
     specialNotes={cat.special_notes}
+
   />)
 
 return (
-  <div id="cats-container">
-    {catCards}
+  <div className="cat-page">
+    <h1>Cats</h1>
+    <ul class="cats-container">
+      {catCards}
+    </ul>
   </div>
 )
 }

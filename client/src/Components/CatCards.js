@@ -1,30 +1,38 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+import {Container, Col, Row} from 'react-bootstrap/';
 
 
-function CatCards({name, image, description, gender, age, trapDate, trapLocation, specialNotes}) {
+function CatCards({name, description, gender, image, age, spay_neuter, tip, adopted, trapDate, trapLocation, tnr, fostered, specialNotes}) {
 
   return (
-    <div className="cat-cards">
-      <Card 
-      // style={{ width: '18rem' }}
-      >
-        <Card.Img variant="top" src={image} />
+    <li className="cat-cards">
+      <Card className="one-cat-card">
+        <Card.Img src={image} />
         <Card.Body>
-          <Card.Title>{name}</Card.Title>
+          <Card.Title className='card-title'>{name}</Card.Title>
           <Card.Subtitle>{age}, {gender}</Card.Subtitle>
-          <Card.Text className="padding">
-            {description}
-          </Card.Text>
-          <ListGroup variant="flush">
-            <ListGroup.Item>Date Trapped: {trapDate}</ListGroup.Item>
-            <ListGroup.Item>Location: {trapLocation}</ListGroup.Item>
-            <ListGroup.Item>Special Notes: {specialNotes}</ListGroup.Item>
-          </ListGroup>
+          {/* <Card.Text> */}
+            <ListGroup variant="flush">
+            <ListGroup.Item>Physical Description: {description}
+              </ListGroup.Item>
+              <ListGroup.Item>Date Trapped: {trapDate}</ListGroup.Item>
+              <ListGroup.Item>Location: {trapLocation}</ListGroup.Item>
+              <ListGroup.Item>Special Notes: {specialNotes}</ListGroup.Item>
+            </ListGroup>
+  
+              <Container>
+                <Row>
+                  <Col>TNR'ed: {tnr.toString()}</Col>
+                  <Col>Adopted: {adopted.toString()}</Col>
+                </Row>
+              </Container>
+
+          {/* </Card.Text> */}
         </Card.Body>
       </Card>
-    </div>
+    </li>
   )
 }
 
