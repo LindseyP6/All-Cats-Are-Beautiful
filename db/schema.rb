@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_05_13_012211) do
+ActiveRecord::Schema.define(version: 2022_05_17_172619) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,11 +33,38 @@ ActiveRecord::Schema.define(version: 2022_05_13_012211) do
     t.string "special_notes"
   end
 
+  create_table "media", force: :cascade do |t|
+    t.string "image"
+    t.string "instagram"
+    t.string "video"
+    t.integer "cat_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "image"
     t.string "bio"
     t.string "password_digest"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "visual_media", force: :cascade do |t|
+    t.string "image"
+    t.string "instagram"
+    t.string "video"
+    t.integer "cat_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "visuals", force: :cascade do |t|
+    t.string "image"
+    t.string "instagram"
+    t.string "video"
+    t.integer "cat_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

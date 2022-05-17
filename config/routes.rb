@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :visuals
   resources :users
   resources :cats
 
