@@ -12,7 +12,7 @@ function CatCards({name, description, gender, image, age, spay_neuter, tip, adop
         <Card.Img src={image} />
         <Card.Body>
           <Card.Title className='card-title'>{name}</Card.Title>
-          <Card.Subtitle>{age}, {gender}</Card.Subtitle>
+          <Card.Subtitle className='card-subtitle'>{age}, {gender}</Card.Subtitle>
           {/* <Card.Text> */}
             <ListGroup variant="flush">
             <ListGroup.Item>Physical Description: {description}

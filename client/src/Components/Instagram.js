@@ -4,11 +4,8 @@ import InstagramEmbed from 'react-instagram-embed';
 function Instagram() {
 
   return (
-    <div id="instagram-container">
-        <h1>Recent Posts</h1>
+    <div className="instagram-container">
         <iframe src="https://www.instagram.com/p/CdbU5mAJUBR/embed" frameborder="0" title="all-cats-insta-post" class="responsive-iframe"></iframe>
-
-        <iframe src="https://www.instagram.com/p/Cc3vyeaJhij/embed" frameborder="0" title="all-cats-insta-post" class="responsive-iframe"></iframe>
         
         {/*
         <script src="https://snapwidget.com/js/snapwidget.js"></script>
