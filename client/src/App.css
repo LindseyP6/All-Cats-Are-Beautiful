@@ -193,10 +193,48 @@
   width: 30vw;
 }
 
-.contact-page, 
 .resource-page, 
 .cat-page, 
 .main-page h1 {
   font-family: 'Source Code Pro', monospace;
   text-align: center;
+}
+
+.contact-grid-email-pics {
+  display: inline-grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-column-gap: 0rem;
+  grid-row-gap: 0px;
+}
+.email-form {
+  grid-area: 1 / 2 / 2 / 3;
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+  /* display: inline-block; */
+}
+
+.email-fields {
+  border: 1px solid #ad5920;
+  width: 50vw;
+  padding: 1rem;
+  margin: .5rem;
+  font-size: 2rem;
+}
+
+.email-submit, .send-email-icon{
+  background-color: #ad5920;
+  font-size: 1.5rem;
+}
+
+.contact-cat-images {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-cat-images img {
+  place-self: center;
+  width: 60%;
+  height: 65%;
 }

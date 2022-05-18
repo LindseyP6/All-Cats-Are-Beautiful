@@ -33,7 +33,8 @@ function App() {
         </Route>
 
         <Route exact path="/contact">
-          <Contact />
+          <Contact 
+            catsArray={catsArray}/>
         </Route>
 
         <Route path="/">
