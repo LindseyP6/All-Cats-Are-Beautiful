@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import '../App.css';
 import Header from './Header';
 import CatsContainer from './CatsContainer';
+import CatPageOne from './CatPageOne';
 import MainPage from './MainPage';
 import Resources from './Resources';
 import Contact from './Contact';
@@ -26,6 +27,10 @@ function App() {
       <Switch>
         <Route exact path="/cats">
           <CatsContainer />
+        </Route>
+
+        <Route exact path="/cats/:id">
+          <CatPageOne />
         </Route>
 
         <Route exact path="/resources">

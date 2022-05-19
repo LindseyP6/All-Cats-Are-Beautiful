@@ -1,10 +1,12 @@
 import React from 'react';
+import { useParams, Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
+import Button from 'react-bootstrap/Button';
 import {Container, Col, Row} from 'react-bootstrap/';
 
 
-function CatCards({name, description, gender, image, age, spay_neuter, tip, adopted, trapDate, trapLocation, tnr, fostered, specialNotes}) {
+function CatCards({id, name, description, gender, image, age, spay_neuter, tip, adopted, trapDate, trapLocation, tnr, fostered, specialNotes}) {
+  // const {id} = useParams()  
 
   return (
     <li className="cat-cards">
@@ -13,14 +15,9 @@ function CatCards({name, description, gender, image, age, spay_neuter, tip, adop
         <Card.Body>
           <Card.Title className='card-title'>{name}</Card.Title>
           <Card.Subtitle className='card-subtitle'>{age}, {gender}</Card.Subtitle>
-          {/* <Card.Text> */}
-            <ListGroup variant="flush">
-            <ListGroup.Item>Physical Description: {description}
-              </ListGroup.Item>
-              <ListGroup.Item>Date Trapped: {trapDate}</ListGroup.Item>
-              <ListGroup.Item>Location: {trapLocation}</ListGroup.Item>
-              <ListGroup.Item>Special Notes: {specialNotes}</ListGroup.Item>
-            </ListGroup>
+          <Card.Text>
+            Physical Description: {description}
+          </Card.Text>
   
               <Container>
                 <Row>
@@ -28,8 +25,12 @@ function CatCards({name, description, gender, image, age, spay_neuter, tip, adop
                   <Col>Adopted: {adopted.toString()}</Col>
                 </Row>
               </Container>
-
-          {/* </Card.Text> */}
+          <Button href={`/cats/${id}`}>        
+            More Details
+         </Button>
+         <Link to={`/cats/${id}`}>
+          <button className="allButtons">More Details</button>
+        </Link>  
         </Card.Body>
       </Card>
     </li>
