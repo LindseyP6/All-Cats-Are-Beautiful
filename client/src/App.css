@@ -157,11 +157,10 @@
   background-color: white;
 }
 
-.list-group {
+.single-cat-list, .card-description {
   padding-top: .5rem;
   background-color: white;
 }
-
 
 .card-subtitle, .row, .col {
   background-color: white;
@@ -237,4 +236,25 @@
   place-self: center;
   width: 60%;
   height: 65%;
+}
+
+/* .single-cat-card {
+  width: 80vw;
+  height: 70vw;
+  display: inline-block;
+}
+.single-cat-card img {
+  width: 50%;
+  height: 50%;
+} */
+
+.single-cat-image {
+  height: 80vh;
+  width: 45vw;
+  margin: 0 5rem 0 5rem;
+}
+
+.single-cat-image-button {
+  text-align: center;
+  background-color: white;
 }

@@ -10,12 +10,12 @@ function CatCards({id, name, description, gender, image, age, spay_neuter, tip, 
 
   return (
     <li className="cat-cards">
-      <Card className="one-cat-card">
+      <Card>
         <Card.Img src={image} />
         <Card.Body>
           <Card.Title className='card-title'>{name}</Card.Title>
           <Card.Subtitle className='card-subtitle'>{age}, {gender}</Card.Subtitle>
-          <Card.Text>
+          <Card.Text className="card-description">
             Physical Description: {description}
           </Card.Text>
   
