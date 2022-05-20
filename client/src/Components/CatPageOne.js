@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
-import Nav from 'react-bootstrap/Nav'; 
+import CardGroup from 'react-bootstrap/CardGroup'; 
 import Button from 'react-bootstrap/Button'
 import {Container, Col, Row} from 'react-bootstrap/';
 
@@ -29,9 +29,22 @@ function CatPageOne() {
                 </Card.Text>
                 </Card.Body>
             </Card>
-            <br></br>
         </div>
         <div className="single-cat-details-card">
+        <CardGroup>
+             <Card style={{ width: '18rem' }}>
+             {/* <Card.Header>Meet {name}!</Card.Header> */}
+                <Card.Body>
+                    <Card.Title>{name}</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">{age} {gender}</Card.Subtitle>
+                    <Card.Text>
+                    {description}
+                    </Card.Text>
+                    <Card.Link href="#">Card Link</Card.Link>
+                    <Card.Link href="#">Another Link</Card.Link>
+                </Card.Body>
+            </Card>
+           </CardGroup>
         </div>
     </div>
   )

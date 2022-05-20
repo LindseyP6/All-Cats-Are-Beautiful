@@ -248,9 +248,14 @@
   height: 50%;
 } */
 
-.single-cat-image {
+.single-cat-page-container {
+  display: flex;
+  color: black;
+}
+
+.single-cat-image, .single-cat-details-card {
   height: 80vh;
-  width: 45vw;
+  width: 40vw;
   margin: 0 5rem 0 5rem;
 }
 
