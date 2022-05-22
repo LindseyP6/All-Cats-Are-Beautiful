@@ -32,7 +32,7 @@ function CatPageOne() {
         </div>
         <div className="single-cat-details-card">
         <CardGroup>
-             <Card style={{ width: '18rem' }}>
+             <Card>
              {/* <Card.Header>Meet {name}!</Card.Header> */}
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>

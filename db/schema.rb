@@ -33,13 +33,17 @@ ActiveRecord::Schema.define(version: 2022_05_17_172619) do
     t.string "special_notes"
   end
 
-  create_table "media", force: :cascade do |t|
+  create_table "projects", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.string "year_completed"
     t.string "image"
-    t.string "instagram"
-    t.string "video"
-    t.integer "cat_id"
+    t.string "demo_link"
+    t.string "github_link"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "technologies"
+    t.string "tag_line"
   end
 
   create_table "users", force: :cascade do |t|
@@ -47,15 +51,6 @@ ActiveRecord::Schema.define(version: 2022_05_17_172619) do
     t.string "image"
     t.string "bio"
     t.string "password_digest"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "visual_media", force: :cascade do |t|
-    t.string "image"
-    t.string "instagram"
-    t.string "video"
-    t.integer "cat_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

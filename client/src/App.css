@@ -17,8 +17,9 @@
   grid-column-gap: 1%;
   grid-row-gap: 0px;
   width: 99%;
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky; 
   position: sticky;
+  z-index:1;
   top: 0; 
   align-self: flex-start;
 }
@@ -105,8 +106,9 @@
 }
 
 .welcome-cat-img {
-  height: 100%;
-  width: 100%;
+  display: inline-block;
+  height: 90%;
+  width: 88%;
   border: .15rem solid #fe7f2d;
 }
 
