@@ -18,20 +18,17 @@ function CatCards({id, name, description, gender, image, age, spay_neuter, tip, 
           <Card.Text className="card-description">
             Physical Description: {description}
           </Card.Text>
-  
               <Container>
                 <Row>
                   <Col>TNR'ed: {tnr.toString()}</Col>
                   <Col>Adopted: {adopted.toString()}</Col>
                 </Row>
               </Container>
-          <Button href={`/cats/${id}`}>        
+          <Button href={`/cats/${id}`} className="card-button">        
             More Details
          </Button>
-         <Link to={`/cats/${id}`}>
-          <button className="allButtons">More Details</button>
-        </Link>  
         </Card.Body>
+        <Card.Footer className="card-footer">Date Trapped: {trapDate}</Card.Footer>
       </Card>
     </li>
   )

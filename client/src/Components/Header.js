@@ -25,8 +25,8 @@ function Header() {
               <Nav className="header-navlinks">
         <Nav.Link href="/">Home</Nav.Link>
         <Nav.Link href="/cats">Cats</Nav.Link>
-        <Nav.Link exact to="/resources">Resources</Nav.Link>
-        <Nav.Link exact to="/contact">Contact</Nav.Link>
+        <Nav.Link href="/resources">Resources</Nav.Link>
+        <Nav.Link href="/contact">Contact</Nav.Link>
 
       </Nav>
       </div>
