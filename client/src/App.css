@@ -8,6 +8,16 @@
   font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.bio-insta-main a {
+  color: #2a9d8f;
+  text-decoration: none;
+}
+
+.bio-insta-main a:hover{
+  color: #e9c46a;
+  text-decoration: bold;
+}
+
 #header {
   font-family: 'Source Code Pro', monospace;
   margin: 1% 1% 2% 1%;
@@ -52,14 +62,14 @@
   padding-top: .6rem;
 }
 
-.header-navlinks a {
+.header-navlinks a.nav-link {
   padding: .70rem;
   background-color: #181b1eca;
   border-radius: 20%;
   margin: 1rem;
 }
 
-.header-contact-right {
+#header-contact-right {
   grid-area: 1 / 3 / 2 / 4;
   justify-self: end;
   align-self: center;
@@ -74,6 +84,7 @@
 
 #header a:hover {
   color: white;
+  font-size: 1.4em;
 }
 
 .bio-insta-main {
@@ -110,13 +121,14 @@
   height: 90%;
   width: 88%;
   border: .15rem solid #fe7f2d;
+  justify-self: right;
 }
 
 .instagram-container { 
   grid-area: 1 / 2 / 3 / 3;
   grid-auto-rows: minmax(min-content, max-content);
   /* width: 65%; */
-  place-self: center;
+  place-self: right;
 }
 
 .card {
@@ -208,15 +220,16 @@
   text-align: center;
 }
 
-.contact-grid-email-pics {
-  display: inline-grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-column-gap: 0rem;
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
   grid-row-gap: 0px;
-}
+  }
+
 .email-form {
-  grid-area: 1 / 2 / 2 / 3;
+  /* grid-area: 1 / 2 / 2 / 3; */
   font-family: 'Source Code Pro', monospace;
   text-align: center;
   /* display: inline-block; */
@@ -224,7 +237,7 @@
 
 .email-fields {
   border: 1px solid #ad5920;
-  width: 50vw;
+  width: 40vw;
   padding: 1rem;
   margin: .5rem;
   font-size: 2rem;
@@ -235,6 +248,9 @@
   font-size: 1.5rem;
 }
 
+.contact-grid-pic1, .contact-grid-pic2 {
+  place-self: center;
+}
 .contact-cat-images {
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
@@ -286,3 +302,21 @@
 .card-title h5 {
   font-size: 10em;
 }
+
+.hover-4 {
+  border: 6px solid;
+  border-image: repeating-linear-gradient(135deg,#e9c46a 0 10px,#fe7f2d 0 20px,#ad5920 0 30px) 8;
+  -webkit-mask: 
+    conic-gradient(from 180deg at top 7px right 7px, #0000 90deg,#000 0)
+     var(--_i,200%) 0  /200% var(--_i,7px) border-box no-repeat,
+    conic-gradient(at bottom 7px left  7px,  #0000 90deg,#000 0)
+     0   var(--_i,200%)/var(--_i,7px) 200% border-box no-repeat,
+    linear-gradient(#000 0 0) padding-box no-repeat;
+  transition: .2s, -webkit-mask-position .2s .2s;
+}
+.hover-4:hover {
+  --_i: 100%;
+  color: #ad5920;
+  transition: .2s, -webkit-mask-size .2s .2s;
+}
+

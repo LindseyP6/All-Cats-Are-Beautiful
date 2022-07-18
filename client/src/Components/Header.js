@@ -23,15 +23,23 @@ function Header() {
             <NavLink exact to="/contact">Contact </NavLink>
         </div>      */}
               <Nav className="header-navlinks">
+              <div className="hover-4">
         <Nav.Link href="/">Home</Nav.Link>
+        </div>
+        <div className="hover-4">
         <Nav.Link href="/cats">Cats</Nav.Link>
+        </div>
+        <div className="hover-4">
         <Nav.Link href="/resources">Resources</Nav.Link>
+        </div>
+        <div className="hover-4">
         <Nav.Link href="/contact">Contact</Nav.Link>
+        </div>
 
       </Nav>
       </div>
-      <div className="header-contact-right">
-        <a href="mailto:allcatsarebeautifulbktnr@gmail.com" target="_blank" alt="Mail" rel="noreferrer" className="header-contact-link"><HiOutlineMail /></a>
+      <div id="header-contact-right">
+        <a href="mailto:allcatsarebeautifulbktnr@gmail.com" target="_blank" alt="Mail" rel="noreferrer" className="hover-insta"><HiOutlineMail /></a>
         <a href="https://www.instagram.com/allcatsarebeautiful_bktnr/" target="_blank" rel="noreferrer" className="header-contact-link"><AiOutlineInstagram /></a>
       </div>
       </Container>

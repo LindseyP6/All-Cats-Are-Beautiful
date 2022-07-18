@@ -29,10 +29,9 @@ function Contact({catsArray}) {
 
   return (
     <div className="contact-page">
-      <div className="contact-grid-email-pics">
-      <div className="contact-cat-images">
-          {catImgs}
-        </div>
+      <div className="contact-grid">
+        <img className="contact-grid-pic1" src="https://storage.cloud.google.com/all-cats/ACAB%20Border.png"/>
+
         <form 
           ref={form} 
           onSubmit={sendEmail} 
@@ -58,7 +57,7 @@ function Contact({catsArray}) {
               className="email-fields" 
               name="message" 
               placeholder="Message" 
-              rows="8"
+              rows="6"
               />
             <br></br>
             <button 
@@ -70,7 +69,12 @@ function Contact({catsArray}) {
                 </span>
             </button>
         </form>
-      </div>
+
+        <img className="contact-grid-pic2" src="https://storage.cloud.google.com/all-cats/ACAB%20Border2.png"/>
+      {/* <div className="contact-cat-images">
+          {catImgs}
+        </div> */}
+        </div>
     </div>
   )
 }
