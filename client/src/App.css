@@ -9,12 +9,12 @@
 }
 
 .bio-insta-main a {
-  color: #2a9d8f;
+  color: #e9c46a;
   text-decoration: none;
 }
 
 .bio-insta-main a:hover{
-  color: #e9c46a;
+  color: #ad5920;
   text-decoration: bold;
 }
 
@@ -101,9 +101,13 @@
 
 .bio-left { 
   grid-area: 1 / 1 / 2 / 2; 
-  width: 75%;
+  width: 90%;
   justify-self: center;
   display: inline-block;
+}
+
+.bio-left p {
+  font-size: 1.4em;
 }
 
 .welcome-cats-main {
@@ -189,14 +193,21 @@
   font-weight: 900;
 }
 
-.row {
+.row, .col {
   padding: .75rem;
+  background-color: transparent !important;
 }
 
+.card-text, .card-link{
+  background-color: white;
+}
 /* text-decoration: underline;
  */
 
- 
+.resource-card {
+  margin: 20%;
+}
+
 /* .snapwidget-widget {
   border:none;
   overflow:hidden;
@@ -319,4 +330,3 @@
   color: #ad5920;
   transition: .2s, -webkit-mask-size .2s .2s;
 }
-
