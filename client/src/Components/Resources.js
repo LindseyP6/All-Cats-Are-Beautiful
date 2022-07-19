@@ -16,7 +16,7 @@ function Resources() {
                 Learn more about TNR!
               </Card.Subtitle>
               <Card.Text>
-                TNR or Trap-Neuter-Return is an initiative to reduce the number of stray and feral cats. 
+                TNR or Trap-Neuter-Return is an initiative to reduce the number of stray and feral cats. First a cat is humanely trapped, taken a vet and then after being tipped, returned to its home!
               </Card.Text>
               <Card.Link  href="https://brooklynanimalaction.org/faq/spay-neuter-resources/" target="blank">Brooklyn Animal Action</Card.Link>
             </Card.Body>
