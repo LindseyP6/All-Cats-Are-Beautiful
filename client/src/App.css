@@ -204,8 +204,13 @@
 /* text-decoration: underline;
  */
 
+.resource-card-row {
+  /* margin: 20%; */
+display: flex;
+}
+
 .resource-card {
-  margin: 20%;
+  align-items:center;
 }
 
 /* .snapwidget-widget {

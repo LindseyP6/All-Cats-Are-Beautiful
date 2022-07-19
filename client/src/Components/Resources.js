@@ -7,9 +7,9 @@ function Resources() {
   return (
     <div className="resource-page">
       <h1>Resources</h1>
-      <Row>
+      <Row className="resource-card-row">
         <Col>
-          <Card style={{ width: "28rem" }} className="resource-card">
+          <Card style={{ width: "28rem", placeSelf: 'center'}} className="resource-card">
             <Card.Body>
               <Card.Title>Trap-Nueter-Return</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">
@@ -23,7 +23,7 @@ function Resources() {
           </Card>
         </Col>
 
-        <Col>
+        {/* <Col>
           <Card style={{ width: "28rem" }} className="resource-card">
             <Card.Body>
               <Card.Title>Foster/Adoptions</Card.Title>
@@ -38,7 +38,7 @@ function Resources() {
               <Card.Link href="#">Another Link</Card.Link>
             </Card.Body>
           </Card>
-        </Col>
+        </Col> */}
 
       </Row>
     </div>
