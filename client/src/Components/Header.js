@@ -12,7 +12,7 @@ function Header() {
     <div id="header">
     <Navbar bg="dark" expand="lg" variant="dark" sticky="top">
       <Container>
-        <Navbar.Brand><img src="https://storage.cloud.google.com/all-cats/WinkLogo.png" alt="wink-logo-top-left" className="header-logo-wink"/></Navbar.Brand>
+        <Navbar.Brand><img src="https://storage.cloud.google.com/all-crails sats/WinkLogo.png" alt="wink-logo-top-left" className="header-logo-wink"/></Navbar.Brand>
       {/* <img src="https://storage.cloud.google.com/all-cats/WinkLogo.png" alt="wink-logo-top-left" className="header-logo-wink"/> */}
       <div className="header-title-and-links">
         <h1>All Cats Are Beautiful</h1>

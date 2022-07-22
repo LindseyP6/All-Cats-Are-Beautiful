@@ -5,7 +5,7 @@ function Instagram() {
 
   return (
     <div className="instagram-container">
-        <iframe src="https://www.instagram.com/p/CdbU5mAJUBR/embed" frameborder="0" title="all-cats-insta-post" class="responsive-iframe"></iframe>
+        <iframe src="https://www.instagram.com/p/CdbU5mAJUBR/embed" frameBorder="0" title="all-cats-insta-post" className="responsive-iframe"></iframe>
 
         <p>See more cute stories <a href="https://www.instagram.com/allcatsarebeautiful_bktnr/" target="blank">here 🐈 </a></p>
         {/*
