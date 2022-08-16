@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
@@ -7,6 +7,7 @@ import {Container, Col, Row} from 'react-bootstrap/';
 
 function CatCards({id, name, description, gender, image, age, spay_neuter, tip, adopted, trapDate, trapLocation, tnr, fostered, specialNotes}) {
   // const {id} = useParams()  
+
 
   return (
     <li className="cat-cards">

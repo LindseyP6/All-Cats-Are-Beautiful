@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
+import ImageCarousel from './ImageCarousel';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup'; 
 import Button from 'react-bootstrap/Button'
@@ -8,6 +9,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 function CatPageOne() {
     const [cat, setCat] = useState({});
     const {id} = useParams()
+    const [isShown, setIsShown] = useState(false)
   
     useEffect(() => {
       fetch(`/cats/${id}`)
@@ -15,7 +17,10 @@ function CatPageOne() {
           .then(cat => setCat(cat));
         }, [id])
 
-        console.log(cat)
+    function handleCarouselClick() {
+    setIsShown(true);
+    console.log('clicked')
+  }
 
     const {image, name, age, gender, description, trap_date, trap_location, special_notes, tnr, adopted, spay_neuter, fostered} = cat
   return (
@@ -25,7 +30,8 @@ function CatPageOne() {
                 <Card.Img variant="top" src={image} />
                 <Card.Body>
                 <Card.Text className="single-cat-image-button">
-                    <Button>More Images</Button>
+                    <Button onClick={handleCarouselClick}>More Images</Button>
+                    {/* {isShown && <ImageCarousel />} */}
                 </Card.Text>
                 </Card.Body>
             </Card>

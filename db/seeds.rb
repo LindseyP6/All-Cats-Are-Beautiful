@@ -557,11 +557,13 @@ c37 = Cat.create(
     tnr: FALSE,
     fostered: TRUE,
     special_notes: "Someone's cat. She was brought to us by Cindy. She was following teachers and students around. Friendly and meowed a lot, definitely scared and a little snippy. She was microchipped and returned to her own after being spayed. Fostered for 1 day."
-    )
+    ),
     
-
-    
-    
+Jenny = Visual.create(
+    cat_id: c28.id,
+    image: "https://storage.cloud.google.com/all-cats-are-beautiful/Jenny2.jpg",
+    instagram: "https://www.instagram.com/p/CRcrn9gB7KQ/"
+)
     
     
     
